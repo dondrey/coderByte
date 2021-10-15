@@ -1,0 +1,19 @@
+def LargestFour(number_list, K):
+
+  number_list.sort()
+  return number_list[-K: ]
+
+#Creating a list of numbers
+numbers=[]
+n = int(input("What is the size of your list: "))
+for i in range(0,n):
+  x = int(input("Enter a number of the list and press enter key: "))
+  numbers.append(x)
+
+q = 4
+print(q, "max elements in ", numbers)
+
+# keep this function call here 
+print(LargestFour(numbers, q))
+a = sum(numbers)
+print("The sum of the 4 largest numbers in the list: ", a)
